@@ -1,0 +1,15 @@
+
+
+The main of objective is make simulator, which similar we driving real car. 
+Our  project can explain by divide to 3 parts.
+Car Model is develope by using LinkIt7688 Duo board to control devices each moter,
+and send MJPEG via HTTP protocal. This board have using linux(OpenWRT) to be OS, 
+and we use Python Language to development.
+Smartphone Application, it's running on Android application, 
+which develope by using JAVA Language on Android Studio . 
+This part using to control car model,
+and recieve Mjpeg to video stream from car model .
+Driver Simulator have designed to similar a driving in real car. 
+We use device to sending data and receive controlling order from break, accelerator, automatic gears.
+
+
