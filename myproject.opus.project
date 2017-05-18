@@ -4,7 +4,7 @@ document(myprop): report
 	language: th
 
 	% Project name
-	name-th: ระบบตวบคุมรถจำลองผ่านแอพพลิเคชั่นแอนดรอย
+	name-th: ระบบควบคุมรถจำลองผ่านแอพพลิเคชันแอนดรอย
 	name-en: Car Driving Simulator System by Android Application
 
 	% Author names
@@ -16,15 +16,15 @@ document(myprop): report
 	author-en: Pathomphong Intajai
 
 	% Advisor (both Thai and English)
-	advisor-th: เจริญ วงศ์ชุ่มเย็น | degree: รศ.	   % Advisor must have a degree
-	advisor-en: Charoen Wongchumyen | degree: Assoc. Prof.
+	advisor-th: เจริญ วงษ์ชุ่มเย็น | degree: รศ. ดร.	   % Advisor must have a degree
+	advisor-en: Charoen Wongchumyen | degree: Assoc. Prof. Dr.
 
 	% Name of 1st and 2nd Committee (based on output language)
 	committee1-th: กาญจนา เอี่ยมสะอาด   % | prefix: อ.ดร. % Custom prefix
 	committee2-th: ณัฏฐ์ อรุณ
 
 	% Name of head of department
-	headdepartment-th: อนุชา ไมตรีภิรมย์
+	headdepartment-th: วัชรพัฐ เมตตานันท
 
 	% Proposal Content
 	proposal: proposal.opus
@@ -51,5 +51,5 @@ document(myprop): report
 
 	% Appendices. Separated by each appendix.
 	% appendix(<appendix title>): <file to the appendix>
-	% appendix(คู่มือการติดตั้งโปรแกรม): appendixA.opus
-	% appendix(คู่มือการใช้งานโปรแกรม): appendixB.opus
+	appendix(คู่มือการติดตั้งโปรแกรม): appendixA.opus
+	appendix(คู่มือการใช้งานโปรแกรม): appendixB.opus

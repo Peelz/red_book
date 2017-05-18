@@ -1,0 +1,49 @@
+[[section: การติดตั้งโปรแกรม]]
+
+    [[subsection: ขั้นตอนการเตรียมไฟล์]]
+        
+        ในการติดตั้งระบบนั้นจำเป็นต้องติดตั้งซอฟต์แวร์เพื่อให้ระบบทำงานได้
+        ซึ่งไฟล์ต่างๆนั้นถูกบันทึกอยู่ภายใน CD 
+        หรืออดาวน์โหลดไฟล์ผ่านช่องทางดังต่อไปนี้
+        [[ulist]]   
+            # https://github.com/Peelz/FirmataArduino/archive/master.zip
+            # https://github.com/Peelz/CDS\_Android/archive/master.zip
+            # https://github.com/Peelz/CDS\_Server/archive/master.zip
+            # https://github.com/Peelz/CDS\_Simulator\_set/archive/master.zip
+            # https://goo.gl/Lvn48c
+        [[end]]
+                
+
+    [[subsection: ติดตั้ง FirmataArduino ผ่าน Arduino IDE]]
+        [[list]]
+            # การติดตั้ง Firmata ลงบนบอร์ดเพื่อเป็นส่วนติดต่อกับ pyFirmata 
+            # เชื่อมต่อบอร์ดเข้าคอมพิวเตอร์
+            # เปิดไฟล์ FirmataArduino.ino ด้วยโปรแกรม Arduino IDE ภาพ [[ref(ArduinoIDE1)]]
+            # ที่แท็ป Tools เลือก Board เป็น LinkIt Smart 7688 Duo แล้วเบิร์นไฟล์ลงบอร์ดโดยการคลิกปุ่มลูกศรขวา ภาพ [[ref(ArduinoIDE2)]]
+        [[end]]
+
+	[[image(ArduinoIDE1):appendix/1_1.png|width=0.5|caption=ตัวอย่างไฟล์ FirmataArduino.ino]]
+	[[image(ArduinoIDE2):appendix/1_2.png|width=0.5|caption=ตัวอย่างการเบิร์นไฟล์]]
+
+
+    [[subsection: การติดตั้งบนบอร์ดพัฒนา]]
+       การย้ายไฟล์ไปยังบอร์ดแบ่งออกเป็นบอร์ดที่เป็น ชุดขับจำลอง และบอร์ดที่ติดตั้งบนรถ ซึ่งมีวิธีการคล้ายๆกันดังนี้
+       [[image(ScanBoard):appendix/scan.png|width=0.5|caption=การใช้โปรแกรม IP Scanner เพื่อหา IP ขอบอร์ด]]
+
+       [[list]]
+            # เปิดโปรแกรม WinSCP จากนั้นใส่รายละเอียดดังต่อไปนี้
+            [[ulist]]
+                # Host name: IP ของบอร์ดที่ต้องการ (ทำการแสกนได้จากโปรแกรม IP Scanner ดังภาพ [[ref(ScanBoard)]])
+                # User name: root 
+                # Password: (ไม่มี) 
+                # Port: 22
+                # Protocal: SCP
+            [[end]]
+            # ทำการอัพโหลดไฟล์ 
+            [[ulist]]
+                # หากเป็นบอร์ดรถจำลองให้ทำการอัพโหลดโฟลเดอร์ server
+                # หากเป็นบอร์ดชุดขับจำลองให้ทำการอัพโหลดโฟลเดอร์ simulator\_set
+            [[end]]
+       [[end]]    
+
+        [[ image(ScanBoard):appendix/3.png|width=0.5|caption=ภาพโปรแกรม WinSCP ]] 
