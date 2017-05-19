@@ -19,16 +19,18 @@
             # การติดตั้ง Firmata ลงบนบอร์ดเพื่อเป็นส่วนติดต่อกับ pyFirmata 
             # เชื่อมต่อบอร์ดเข้าคอมพิวเตอร์
             # เปิดไฟล์ FirmataArduino.ino ด้วยโปรแกรม Arduino IDE ภาพ [[ref(ArduinoIDE1)]]
-            # ที่แท็ป Tools เลือก Board เป็น LinkIt Smart 7688 Duo แล้วเบิร์นไฟล์ลงบอร์ดโดยการคลิกปุ่มลูกศรขวา ภาพ [[ref(ArduinoIDE2)]]
+            # ที่แถบ Tools เลือก Board เป็น LinkIt Smart 7688 Duo 
+            # จากนั้นทำการเบิร์นไฟล์ลงบอร์ดโดยการคลิกปุ่มลูกศรขวา ภาพ [[ref(ArduinoIDE2)]]
         [[end]]
 
-	[[image(ArduinoIDE1):appendix/1_1.png|width=0.5|caption=ตัวอย่างไฟล์ FirmataArduino.ino]]
-	[[image(ArduinoIDE2):appendix/1_2.png|width=0.5|caption=ตัวอย่างการเบิร์นไฟล์]]
+	[[image(ArduinoIDE1):appendixA/1_1.png|width=0.8|caption=ตัวอย่างไฟล์ FirmataArduino.ino]]
+	[[image(ArduinoIDE2):appendixA/1_2.png|width=0.8|caption=ตัวอย่างการเบิร์นไฟล์]]
 
 
-    [[subsection: การติดตั้งบนบอร์ดพัฒนา]]
+    [[subsection: การติดตั้งซอฟต์แวร์บนบอร์ดพัฒนา]]
        การย้ายไฟล์ไปยังบอร์ดแบ่งออกเป็นบอร์ดที่เป็น ชุดขับจำลอง และบอร์ดที่ติดตั้งบนรถ ซึ่งมีวิธีการคล้ายๆกันดังนี้
-       [[image(ScanBoard):appendix/scan.png|width=0.5|caption=การใช้โปรแกรม IP Scanner เพื่อหา IP ขอบอร์ด]]
+       [[image(ScanBoard):appendixA/scan.png|width=0.8|caption=การใช้โปรแกรม IP Scanner เพื่อหา IP ขอบอร์ด]]
+        [[ image(ScanBoard):appendixA/3.png|width=0.5|caption=ภาพโปรแกรม WinSCP ]] 
 
        [[list]]
             # เปิดโปรแกรม WinSCP จากนั้นใส่รายละเอียดดังต่อไปนี้
@@ -46,4 +48,12 @@
             [[end]]
        [[end]]    
 
-        [[ image(ScanBoard):appendix/3.png|width=0.5|caption=ภาพโปรแกรม WinSCP ]] 
+
+
+        [[subsection: การติดตั้งแอพพลิเคชันบนแอนดรอย]]
+            เริ่มแรกผู้ใช้ต้องนำไฟล์ apk ไปยังอุปกรณ์สมาร์ตโฟน จากนั้นทำการติดตั้งโดยการสัมผัสไฟล์ที่ต้องการติดตั้ง
+            จากนั้นรอจนระบบติดตั้งสำเร็จ จะพบไอคอนดังภาพ [[ref(App3)]]
+
+        [[ image(ScanBoard):appendixA/App1.png|width=0.5|caption=ตำแหน่งของไฟล์ติดตั้ง CDSimulator ]] 
+        [[ image(ScanBoard):appendixA/App2.png|width=0.5|caption=รอการติดตั้งแอพพลิเคชัน]] 
+        [[ image(ScanBoard):appendixA/App3.png|width=0.5|caption=ภาพโลโก้ของ CDSimulator ]] 

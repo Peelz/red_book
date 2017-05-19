@@ -52,4 +52,4 @@ document(myprop): report
 	% Appendices. Separated by each appendix.
 	% appendix(<appendix title>): <file to the appendix>
 	appendix(คู่มือการติดตั้งโปรแกรม): appendixA.opus
-	appendix(คู่มือการใช้งานโปรแกรม): appendixB.opus
+	% appendix(คู่มือการใช้งานโปรแกรม): appendixB.opus
